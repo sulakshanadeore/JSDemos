@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="projectClasses.js"></script>
+</head>
+<body>
+    <script>
+        function makePaymentMethod()
+        {
+        let s=new CardPayment();
+        var amt=document.getElementById("amount").value;
+        alert(amt);
+        s.pay(amt);
+        //console.log(s instanceof Payment)
+        }
+        // let a=new Account(1010,10000,"Current");
+        // a.deposit(10000);
+        // a.showBalance();
+        
+
+        // let c=new Customer(101,"Gauri",a);
+        // // c.Custid=101;
+        // // c.CustName="Gauri";
+        // // console.log(c.Custid);
+        // // console.log(c.CustName);
+
+        // let a1=new Account(1,1,"Savings");
+
+       // c.showAllCustDetails();
+   
+//        let showAllDetails=function()
+//     {
+//         console.log("Showing from anonymous function");
+//           let a1=new Account(1011,10000,"Fixed");
+//         let c1=new Customer(1001,"Mani",a);
+//         c1.showAllCustDetails();
+   
+
+//     }
+//     showAllDetails();
+// console.log("--------")
+
+//     let marks=[90,80,60];
+//     let passed=marks.filter(function(m){
+// return m>75;
+//     });
+//     console.log("PAssed=" +passed);
+    </script>
+<form id="form1">
+    <fieldset>
+        <legend>Payment Module</legend>
+        <label for="amount">Enter Amount(Rs):</label>
+        <input type="number" name="amount" id="amount">
+        <button type="button" onclick="makePaymentMethod()">Make Payment</button>
+    </fieldset>
+</form>
+
+
+</body>
+
+
+</html>

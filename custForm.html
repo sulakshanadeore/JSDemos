@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+
+    <script src="projectClasses.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>customer Data</legend>
+            <label for="custid">Enter CustomerID:</label>
+            <input type="number" name="custid" id="custid">
+            <br/>
+            <label for="custname">Enter CustomerName:</label>
+            <input type="text" name="custname" id="custname">
+            <br/>
+            <label for="acno">Enter AccountNo:</label>
+            <input type="number" name="acno" id="acno">
+            <br/>
+            <label for="bal">Enter Account Opening balance:</label>
+            <input type="number" name="bal" id="bal">
+            <br/>
+            <label for="accounttype">Enter Account Type:</label>
+            <select name="accounttype" id="accounttype">
+                <option value="Savings">Savings</option>
+                <option value="Current">Current</option>
+                <option value="Fixed">Fixed</option>
+            </select>
+            <button type="button" onclick="CreateCustomer()">submit</button>
+        </fieldset>
+
+        
+    </form>
+</body>
+</html>

@@ -137,3 +137,22 @@ return this.#custname;
         this.#custname=value;
     }
 }
+
+ function CreateCustomer()
+{
+var custid=document.getElementById("custid").value;
+var custname=document.getElementById("custname").value;
+var acno=document.getElementById("acno").value;
+var bal=document.getElementById("bal").value;
+var accounttype=document.getElementById("accounttype").value;
+
+let account=new Account(acno,bal,accounttype);
+
+ let c=new Customer(custid,custname,account);
+ c.showAllCustDetails();
+        // c.Custid=101;
+        // c.CustName="Gauri";
+        // console.log(c.Custid);
+        // console.log(c.CustName);
+
+}
