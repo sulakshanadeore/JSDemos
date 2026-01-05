@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $("#btn1").click(
+                            function()
+                                {
+                                    alert("You clicked the button....");
+                                    var n=$("#username").val();
+                                    alert("Hello, "+ n);
+                                    
+                                     //  $('#img1').show();
+                                });
+                $("#img1").hover(
+                    function(){
+                        $(this).toggle();
+                    }
+                );
+            });
+    </script>
+</head>
+<body>
+    <div style="height:auto;width: auto;background-color: black;">
+        <img id="img1" src="emp1.jpg">
+    </div>
+    <form>
+        <label for="username">Enter User Name:</label>
+        <input type="text" name="username" id="username">
+        <button id="btn1">submit</button>
+    </form>
+</body>
+</html>

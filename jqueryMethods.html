@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+        $(document).ready(
+            function(){
+                $("body *").css("background-color","red")
+                $("#pno").css("background-color","blue")
+                 $("#tno").css("background-color","green")
+                 $(".classbold").css("font-family","MV Boli")
+                 //$("p").fadeOut(1000);
+                
+                $("#up").click(
+                     function(){
+                        $("div").slideUp();
+                                }
+                                );
+
+            $("#down").click(   
+                     function(){
+                        $("div").slideDown();
+                                }
+                                );
+
+            $("#toggle").click(function(){
+                 $("div").slideToggle();
+            });
+
+            });
+           
+        
+     </script>
+</head>
+<body>
+    <div style="display:none;height:300px;width:400px;background-image:url(emp1.jpg);background-image: repeat;">
+           </div>
+
+           <button id="up">slide up</button>
+           <button id="down">slide down</button>
+           <button id="toggle">slide Toggle</button>
+         
+
+    <form>
+        <p>This is a demo</p>
+        <p>This is another paragraph</p>
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="fno">
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="sno">
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="tno">
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="pno">
+
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="rno" class="classbold">
+
+        <label for="fno">Enter First Number:</label>
+        <input type="text" name="fno" id="bac" class="classbold">
+
+        
+
+
+    </form>
+</body>
+</html>
