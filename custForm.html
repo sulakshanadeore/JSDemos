@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Details</title>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="projectClasses.js"></script>
+    
 </head>
 <body>
     <form>
@@ -16,6 +17,12 @@
             <br/>
             <label for="custname">Enter CustomerName:</label>
             <input type="text" name="custname" id="custname">
+            <br/>
+            <label for="gender">Select Gender:</label>
+            <label><input type="radio" name="gender" id="rdoMale" value="Male" checked=true>Male</label>
+            <label><input type="radio" name="gender" id="rdoFemale" value="Female">Female</label>
+            <label><input type="radio" name="gender" id="rdoothers" value="Others">Others</label>
+
             <br/>
             <label for="acno">Enter AccountNo:</label>
             <input type="number" name="acno" id="acno">
@@ -31,7 +38,25 @@
             </select>
             <button type="button" onclick="CreateCustomer()">submit</button>
         </fieldset>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var genderval;
+if($("#rdoMale").prop("checked"))
+{
+genderval="Male";
+}
+else if($("#rdoFemale").prop("checked"))
+{
+    genderval="Female";
+}
+else
+    genderval="Others"
+alert(genderval)
+        });
 
+    });
+</script>
         
     </form>
 </body>
