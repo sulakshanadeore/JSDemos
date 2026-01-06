@@ -1,0 +1,18 @@
+Typescript: it is superset of Javascript that adds static typing to help  catch erros during 
+code creation rather than at runtime.
+Datatypes: string,boolean,number etc
+Special Datatypes: any, unknown,never
+
+never: it is a type that represents the the type of values that never occur.
+It is used to indicate that something never happens or should never happen.
+
+1) Functions that never return(always throw error or got into infinite loop)
+2) type guards that never pass type checking.
+
+
+
+
+Overloading Rules:
+1) Only 1 implementation for multiple methods
+2)implementation signature must be compatible with all overloads
+3) Overloads are compile time only, not runtime
